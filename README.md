@@ -10,7 +10,6 @@ Remoney is a web application built to facilitate the buying and selling of goods
 - **User Authentication**: Secure user authentication and authorization.
 - **Listing Management**: Easy creation, editing, and removal of listings.
 - **Search and Filters**: Efficient search functionality and filters for better item discovery.
-- **Messaging System**: Built-in messaging for communication between buyers and sellers.
 - **Responsive Design**: Ensures a seamless experience across devices.
 
 ## Installation ⬇️
@@ -19,6 +18,7 @@ To set up the project locally:
 git clone https://github.com/shivdutt-B/Remoney.git
 
 ## Tech used 
+![Image Alt Text](C:/Users/shivd/Downloads/react-svgrepo-com.svg)
 <i class="fa-brands fa-html5" style="color: #fa7000;"></i>
 <i class="fa-brands fa-css3-alt" style="color: #125ea5;"></i>
 <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
