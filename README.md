@@ -18,7 +18,7 @@ To set up the project locally:
 git clone https://github.com/shivdutt-B/Remoney.git
 
 ## Tech used 
-<img src="https://www.svgrepo.com/show/354259/react.svg"></img>
+<img src="https://www.svgrepo.com/show/354259/react.svg" width="25px"></img>
 
 
 
