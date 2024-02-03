@@ -23,7 +23,7 @@ git clone https://github.com/shivdutt-B/Remoney.git
 <img src="https://www.svgrepo.com/show/353925/javascript.svg" width="40px" alt="js" border="1px solid red"></img>
 <img src="https://www.svgrepo.com/show/354259/react.svg" width="40px" alt="react" border="1px solid red"></img>
 <img src="https://www.svgrepo.com/show/373845/mongo.svg" width="40px" alt="mongo" border="1px solid red"></img><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png" width="50px" alt="mongoose" border="1px solid red"></img>
-<img src="https://www.svgrepo.com/show/452075/node-js.svg" width="60px" alt="nodejs"></img><img src="https://www.svgrepo.com/show/330398/express.svg" width="40px" alt="expressjs" border="1px solid red"></img>
+<img src="https://www.svgrepo.com/show/452075/node-js.svg" width="40px" alt="nodejs"></img><img src="https://www.svgrepo.com/show/330398/express.svg" width="40px" alt="expressjs" border="1px solid red"></img>
 
 
 
