@@ -17,7 +17,7 @@ Remoney is a web application built to facilitate the buying and selling of goods
 To set up the project locally:
 git clone https://github.com/shivdutt-B/Remoney.git
 
-## Tech used <img src="https://www.svgrepo.com/show/489256/puzzle.svg" width="35px" alt="tech used"></img>
+## Tech used <img src="https://www.svgrepo.com/show/277463/programming-monitor.svg" width="35px" alt="tech used"></img>
 <img src="https://www.svgrepo.com/show/452228/html-5.svg" width="45px" alt="html" border="1px solid red"></img>
 <img src="https://www.svgrepo.com/show/349330/css3.svg" width="40px" alt="css" border="1px solid red"></img>
 <img src="https://www.svgrepo.com/show/353925/javascript.svg" width="40px" alt="js" border="1px solid red"></img>
