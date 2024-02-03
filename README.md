@@ -20,7 +20,7 @@ git clone https://github.com/shivdutt-B/Remoney.git
 ## Tech used <img src="https://www.svgrepo.com/show/489256/puzzle.svg" width="35px" alt="tech used"></img>
 <img src="https://www.svgrepo.com/show/452228/html-5.svg" width="40px" alt="html"></img>
 <br>
-<img src="https://www.svgrepo.com/svg/452185/css-3" width="40px" alt="css"></img>
+<img src="https://www.svgrepo.com/show/349330/css3.svg" width="40px" alt="css"></img>
 <br>
 <img src="https://www.svgrepo.com/show/353925/javascript.svg" width="40px" alt="js"></img>
 <br>
