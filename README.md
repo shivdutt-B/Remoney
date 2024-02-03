@@ -18,12 +18,12 @@ To set up the project locally:
 git clone https://github.com/shivdutt-B/Remoney.git
 
 ## Tech used <img src="https://www.svgrepo.com/show/489256/puzzle.svg" width="35px" alt="tech used"></img>
-<img src="https://www.svgrepo.com/show/452228/html-5.svg" width="50px" alt="html"></img>
+<img src="https://www.svgrepo.com/show/452228/html-5.svg" width="40px" alt="html"></img>
 <img src="https://www.svgrepo.com/show/349330/css3.svg" width="40px" alt="css"></img>
 <img src="https://www.svgrepo.com/show/353925/javascript.svg" width="40px" alt="js"></img>
 <img src="https://www.svgrepo.com/show/354259/react.svg" width="40px" alt="react"></img>
 <img src="https://www.svgrepo.com/show/373845/mongo.svg" width="40px" alt="mongo"></img> + <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png" width="50px" alt="mongoose"></img>
-<img src="https://www.svgrepo.com/show/376337/node-js.svg" width="40px" alt="nodejs"></img> + <img src="https://www.svgrepo.com/show/330398/express.svg" width="40px" alt="expressjs"></img>
+<img src="https://www.svgrepo.com/show/376337/node-js.svg" width="50px" alt="nodejs"></img> + <img src="https://www.svgrepo.com/show/330398/express.svg" width="40px" alt="expressjs"></img>
 
 
 
