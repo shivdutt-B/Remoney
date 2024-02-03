@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Remoney :fire:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the remoney repository! This project is a web platform that enables users to buy and sell a variety of items, creating a marketplace for connecting buyers and sellers. Here's a guide to help you get started.
 
-## Available Scripts
+## Introduction 📢
 
-In the project directory, you can run:
+Remoney is a web application built to facilitate the buying and selling of goods in a user-friendly and secure environment. The platform empowers users to create listings, explore available items, and engage in transactions with ease.
 
-### `npm start`
+## Features 📋
+- **User Authentication**: Secure user authentication and authorization.
+- **Listing Management**: Easy creation, editing, and removal of listings.
+- **Search and Filters**: Efficient search functionality and filters for better item discovery.
+- **Responsive Design**: Ensures a seamless experience across devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation ⬇️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To set up the project locally:
+git clone https://github.com/shivdutt-B/Remoney.git
 
-### `npm test`
+## Tech used <img src="https://www.svgrepo.com/show/277463/programming-monitor.svg" width="28px" alt="tech used"></img>
+<img src="https://www.svgrepo.com/show/452228/html-5.svg" width="45px" alt="html" border="1px solid red"></img>
+<img src="https://www.svgrepo.com/show/349330/css3.svg" width="40px" alt="css" border="1px solid red"></img>
+<img src="https://www.svgrepo.com/show/353925/javascript.svg" width="40px" alt="js" border="1px solid red"></img>
+<img src="https://www.svgrepo.com/show/354259/react.svg" width="40px" alt="react" border="1px solid red"></img>
+<img src="https://www.svgrepo.com/show/373845/mongo.svg" width="40px" alt="mongo" border="1px solid red"></img><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png" width="50px" alt="mongoose" border="1px solid red"></img>
+<img src="https://www.svgrepo.com/show/452075/node-js.svg" width="40px" alt="nodejs"></img><img src="https://www.svgrepo.com/show/330398/express.svg" width="40px" alt="expressjs" border="1px solid red"></img>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
