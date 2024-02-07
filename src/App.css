@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+:root {
+  --small: 14px;
+  --normal: 17px;
+  --heading: 21.5px;
+  --large: 25px;
+  --theme-color: rgb(83, 64, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.nav-bar-logo-container {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.nav-bar-logo-container a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--theme-color);
+  font-style: italic;
+  font-size: 30px;
+}
+
+.nav-bar-container>div {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-image {
+  height: 100%;
+}
+
+.nav-bar-search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-bar-search-bar-container input {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  border: 2px solid var(--theme-color);
+  outline: none;
+  color: gray;
+  background-color: #F4F4F4;
+  padding-left: 3px;
+}
+
+.nav-bar-search-bar-container input:focus {
+  box-shadow: 0.4px 0.4px 10px -4px black;
+}
+
+.nav-bar-links-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-bar-links-list li {
+  margin-right: 10px;
+}
+.nav-bar-links-list li:first-child{
+  margin-right: 15px;
+}
+
+.nav-bar-links-list li a:active,
+.nav-bar-links-list li a:link,
+.nav-bar-links-list li a:visited {
+  font-size: var(--normal);
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--theme-color)
+}
+
+.nav-bar-links-list li a{
+  border-radius: 4px;
+  padding: 7px 10px;
+}
+.nav-bar-links-list li:first-child a {
+  transition:all 0.5s;
+}
+.nav-bar-links-list li:first-child a:hover{
+  background-color: #ebecf0;
+  text-decoration: underline solid var(--theme-color);
+}
+
+
+.nav-bar-links-list li:last-child a {
+  color: white;
+  background-color: var(--theme-color);
+}
+
+
+/* sign in sign up */
+.sign-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 60px);
+  justify-content: center;
+}
+
+.sign {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+
+.sign h1 {
+  margin: 0;
+}
+
+.sign-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.sign-form .email-input {
+  margin: 10px 0;
+}
+
+.sign-form input {
+  max-width: 350px;
+  width: 100%;
+  height: 35px;
+  background-color: #F4F4F4;
+  border: 2px solid var(--theme-color);
+  border-radius: 4px;
+  outline: none;
+}
+.sign-form input:focus{
+  box-shadow: 0.4px 0.4px 10px -4px black;
+}
+
+.sign-submit-btn {
+  height: 35px;
+  background: var(--theme-color);
   color: white;
+  font-size: var(--normal);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.sign-up-link {
+  margin-top: 10px;
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sign-up-link a:link,
+.sign-up-link a:visited,
+.sign-up-link a:hover,
+.sign-up-link a:active {
+  color: var(--theme-color)
+}
+.nav-bar-search-bar-container i{
+  position: absolute;
+  font-size:var(--normal);
+  right:0px;
+  background-color: var(--theme-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:30px;
+  width:30px;
+  color:white !important;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
