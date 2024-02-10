@@ -9,17 +9,22 @@ import Navbar from './components/Navbar';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 
+//Context
+import GlobalContextData from './Context/GlobalContext';
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter >
-      <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-      </BrowserRouter>
+      <GlobalContextData>
+        <BrowserRouter >
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
+        </BrowserRouter>
+      </GlobalContextData>
     </div>
   );
 }
