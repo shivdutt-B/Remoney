@@ -4,11 +4,13 @@ export const globalContext = createContext() // Only created a context the data 
 
 const GlobalContextData = (props) => {
     //All the states comes here.
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState()
+    const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(true)
 
     return (
         <globalContext.Provider value={{
-            user, setUser
+            user, setUser, loading, setLoading
         }}>
             {props.children}
         </globalContext.Provider>

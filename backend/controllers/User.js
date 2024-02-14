@@ -8,8 +8,9 @@ exports.signUp = async (req, res) => {
     // creating a new user account with the basic information.
     try {
         const user = userModel.userModel
-        const d = await user.find()
-        console.log('existing data', d)
+        // const d = await user.find()
+        // console.log('existing data', d)
+        console.log('SIGN UP LAUNCHED', req.body)
 
         let { userName, email, password } = req.body
 
@@ -48,31 +49,26 @@ exports.signUp = async (req, res) => {
 
 exports.signIn = async (req, res) => {
     try {
-        console.log('REQUEST', req)
         const user = userModel.userModel
         const { email, password } = req.body
-        console.log('EXTACTED DATA', email, password)
 
         if (email && password) {
-            console.log('FLAG1')
-            const existingUser = await user.findOne({ email: email }) // checking if user already exists.
-            console.log('existing user', existingUser)
+            let existingUser = await user.findOne({ email: email }) // checking if user already exists.
 
             if (!existingUser) {
                 // If user does exist then sending success as false with reason user not found
                 res.json({ success: false, reason: 'User not found' })
             }
             else {
-                console.log('FLAG2')
                 const decryptPassword = await bcrypt.compare(password, existingUser.password) //decrypting the password.
 
                 if (decryptPassword) {
-                    console.log('FLAG3')
                     //If the password get decrypted successfully then generating a jwt token and sending it with the response.
                     const token = await jwt.sign({ userId: existingUser._id }, 'secretkey');
-                    existingUser[token] = token
-                    console.log('FLAG4')
-                    res.json({ status: true, data:existingUser })
+                    
+                    await delete existingUser.password
+                    console.log('Existing user', existingUser)
+                    res.json({ status: true, data:existingUser, token: token })
                 }
                 else { // If the password is not decrypted which means the email id provided is valid but not the password.
                     res.json({ success: false, reason: 'Wrong credentials' })
@@ -112,4 +108,34 @@ exports.deleteUser = async (req, res) => {
         res.json({ success: false, reason: e.message })
     }
 
+}
+
+exports.sendUser = async (req, res) => {
+    try{
+        const user = userModel.userModel
+        
+        const {token} = req.body
+        
+        if (token) {
+            const decodeToken = await jwt.verify(token, "secretkey")
+            
+            const userId = decodeToken.userId
+            
+            if (userId) {
+                let existingUser = await user.findById(userId)
+                const newToken = await jwt.sign({userId: userId}, "secretkey")
+                delete existingUser.password
+                res.json({ success: true, data: existingUser, token: newToken})
+            }
+            else{
+                res.json({ success: false, reason: "Token not valid" })
+            }
+
+        }
+        else{
+            res.json({ success: false, reason: "Token not provided"})
+        }
+    } catch(e) {
+        res.json({success: false, reason: e.message})
+    }
 }
